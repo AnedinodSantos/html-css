@@ -1,0 +1,103 @@
+/*
+    O CSS significa Cascade Style Sheet (Folha de estilo em cascata)
+    Ele pode ser usado: 
+        in-line, ou seja na própria tag do elemento a ser estilizado (basta abrir a propriedade style dentro
+        da tag e definir qual caracaterística será estilizada);
+
+        Em bloco, basta abrir um tag style no arquivo html. Dentro dela será possível escrever um bloco de estilos para os
+        elementos do html
+
+        Externo. Este arquivo é um CSS externo. Nele podemos definir os estilos de uma página e linkar ele ao html por
+        meio da tag link no head do html.
+    
+    Cores em CSS.
+    Podemos representar cores através de RGB, Hexadecimal ou pelo nome da cor.
+
+    Nome da cor: red, blue, black ...
+
+    Hexadecimal:
+        #_ _ _ _ _ _ -> para demarcar que é hexadecimal usamos a #. Depois devemos definir qual o grau de vermelho, verde e azul serão aplicados.
+        Simbolos do Hexadecimal -> 0123456789ABCDEF onde 0 é o grau mínimo de dencidade de uma cor e F o grau máximo.
+        Exemplo de cor: Cinza -> #CCCCCC
+    
+    RGB:
+        para o RGB é preciso abrir a função rgb(_ _ _, _ _ _, _ _ _ ). Dentro dela o primeiro parâmetro é a densidade da cor vermelha, o segundo da cor verde
+        e o tercfeiro da cor azul. Ao contrário do Hexadecimal a densidade das cores em RGB se dá do 0 ao 255 totalizando 256 "tons" para cada cor.
+    
+    ---------------------------------------------
+    Algumas propriedades dos textos:
+        text-align -> como o texto deve ser alinhado
+        font-size -> o tamanho da fonte (a unidade é px e o tamanho padrão é 16px)
+        background -> a cor de fundo (acredito que todos os elementos possuem essa propriedade)
+        color -> a cor do elemento (acredito que todos os elementos possuem essa propriedade)
+    ---------------------------------------------
+    Seletores CSS
+     - identificadores -> id -> #
+     - classes -> class -> .
+     - tag
+    ---------------------------------------------
+    Características dos elementos HTML: in-line e block
+        - os elementos in-line são elementos que aceitam outros elementos ao lado, ou seja, um outro elemento pode ocupar o restante da
+          largura da linha. A tag <img> tem esse comportamento como padrão. Porém, não podemos alterar os espaçamentos externos e internos,
+          margin e padding
+        - os elementos block são elementos que bloqueiam a linha onde estão, assim ,mesmo que não ocupem a largura total da linha, nenhum
+          outro elemento pode ser colocado ali mesmo que seja diminuído seu tamanho.
+        
+        - podemos alterar esses comportamentos mudando a propriedade display. Nela temos muitas opções, e uma interssante é a "inline block".
+          Com esta opção definimos que o conteúdo só vai bloquear a largura da linha apenas conforme seu tamanho, além de podermos alterar
+          os espaçamentos interno e externos.
+    
+*/
+
+body {
+    
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}
+
+em strong {
+    color: #FF0000;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagembeneficios {
+    width:50%
+}
